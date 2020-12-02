@@ -199,7 +199,8 @@ h3 {
 }
 h4 {
   font-size: 34px;
-  line-height: 40px;
+  /* line-height: 40px; */
+  line-height: 100px;
   color: #ec572c;
 }
 h5 {
@@ -382,7 +383,7 @@ button,
 input[type='submit'],
 input[type='reset'],
 input[type='button'] {
-  background: #363636;
+  /* background: #363636; */
   margin-top: 10px;
   border: none;
   color: #dfdfdf;

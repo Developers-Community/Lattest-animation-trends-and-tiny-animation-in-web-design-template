@@ -13,7 +13,7 @@ import TeamAndCounter from './TeamAndCounter'
 import { working, counterWorking } from './working'
 
 const MainPage = () => {
-    working()
+    // working()
     // counterWorking()
 
 

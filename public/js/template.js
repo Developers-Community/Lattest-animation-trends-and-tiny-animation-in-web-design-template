@@ -10,7 +10,6 @@ $(window).load(function() {
   $("body").removeClass("preload");
 });
 	
-	
 	$(document).ready(
 	function() {  
 		$("html").niceScroll();
@@ -47,6 +46,12 @@ new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
 		$('#home').css({'height':($(window).height())+'px'});
 		});
 	});
+	// $(function(){"use strict";
+	// 	$('#home').css({'height':($(window).height())-'px'});
+	// 	$(window).resize(function(){
+	// 	$('#home').css({'height':($(window).height())-'px'});
+	// 	});
+	// });
 
 
 	
@@ -67,20 +72,20 @@ new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
 
 	
 /*global $:false */
-$(document).ready(function(){"use strict";
-	$(".scroll").click(function(event){
+// $(document).ready(function(){"use strict";
+// 	$(".scroll").click(function(event){
 
-		event.preventDefault();
+// 		event.preventDefault();
 
-		var full_url = this.href;
-		var parts = full_url.split("#");
-		var trgt = parts[1];
-		var target_offset = $("#"+trgt).offset();
-		var target_top = target_offset.top - 80;
+// 		var full_url = this.href;
+// 		var parts = full_url.split("#");
+// 		var trgt = parts[1];
+// 		var target_offset = $("#"+trgt).offset();
+// 		var target_top = target_offset.top - 80;
 
-		$('html, body').animate({scrollTop:target_top}, 1400);
-	});
-});	
+// 		$('html, body').animate({scrollTop:target_top}, 1400);
+// 	});
+// });	
 
 
 	
@@ -234,7 +239,7 @@ $(document).ready(function(){
 		//xPosition - Horizontal position of the element
 		//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
 		//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-		$('#home').parallax("50%", 0.2);
+		$('#home').parallax("50%", 0.5);
 		$('#parallax-1').parallax("50%", 0.2);
 		$('#parallax-2').parallax("50%", 0.2);
 		$('#parallax-3').parallax("50%", 0.2);
@@ -308,8 +313,6 @@ jQuery(document).ready(function () {
 		function getNumbColumns() { 
 			var winWidth = $(window).width(), 
 				columnNumb = 1;
-			
-			
 			if (winWidth > 1500) {
 				columnNumb = 3;
 			} else if (winWidth > 1200) {
@@ -359,8 +362,7 @@ jQuery(document).ready(function () {
 		
 		container.imagesLoaded(function () { 
 			setColumnWidth();
-			
-			
+		
 			container.isotope( { 
 				itemSelector : '.box', 
 				layoutMode : 'masonry', 

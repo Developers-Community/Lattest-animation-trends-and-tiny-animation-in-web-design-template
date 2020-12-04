@@ -19,7 +19,7 @@ const HomeAnimation = () => {
                     </div>
                     <div className="container">
                         <div className="sixteen columns">
-                            <div className="home-text-middle words">a p o l l o</div>
+                            <div className="home-text-middle words">g a m i c a</div>
                         </div>
                     </div>
                     <div className="container">

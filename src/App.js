@@ -4,7 +4,10 @@ import MainPage from './components/MainPage'
 import { working } from './components/working'
 
 function App() {
-  working()
+  // working()
+  // useEffect(() => {
+  //   working()
+  // }, [])
   return (
     <div >
       <MainPage />

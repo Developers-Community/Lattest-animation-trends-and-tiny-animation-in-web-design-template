@@ -62,20 +62,3 @@ export const working = () => {
     head.appendChild(script19)
     head.appendChild(script20)
 }
-
-
-
-export const counterWorking = () => {
-    let head = document.getElementsByTagName('head')[0]
-    let script = document.createElement('script')
-    let script2 = document.createElement('script')
-    let script3 = document.createElement('script')
-    script.async = 1
-    script.src = "animated-counter/vendor/jquery/jquery.min.js"
-    script2.src = "animated-counter/vendor/counterup/counterup.min.js"
-    script3.src = "animated-counter/vendor/jquery.easing/jquery.easing.min.js"
-    head.appendChild(script)
-    head.appendChild(script2)
-    head.appendChild(script3)
-
-}

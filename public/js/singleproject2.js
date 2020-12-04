@@ -2,10 +2,10 @@
 
 
 
-// 	$(window).load(function() {
-// 		$("#status").fadeOut();
-// 		$("#preloader").delay(350).fadeOut("slow");
-// 	})  
+	$(window).load(function() {
+		$("#status").fadeOut();
+		$("#preloader").delay(350).fadeOut("slow");
+	})  
 
 
 
@@ -13,18 +13,18 @@
 
 
 
-// 	$(document).ready(
-// 	function() {  
-// 		$("html").niceScroll();
-// 		}
-// 	);	
+	$(document).ready(
+	function() {  
+		$("html").niceScroll();
+		}
+	);	
 
 
 
 
-//   $(document).ready(function(){
-//     $(".media").fitVids();
-//   });	
+  $(document).ready(function(){
+    $(".media").fitVids();
+  });	
 
 
 

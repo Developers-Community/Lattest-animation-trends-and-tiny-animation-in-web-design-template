@@ -2,15 +2,11 @@
   
   
   
-	// $(window).load(function() {
-	// 	$("#status").fadeOut();
-	// 	$("#preloader").delay(150).fadeOut("slow");
-	// })  
+	$(window).load(function() {
+		$("#status").fadeOut();
+		$("#preloader").delay(150).fadeOut("slow");
+	})  
 	
-	
-	
-
-
 	
 	
 	$(document).ready(

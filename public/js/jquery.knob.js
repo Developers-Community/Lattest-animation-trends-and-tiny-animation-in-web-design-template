@@ -1,28 +1,8 @@
-/*!jQuery Knob*/
-/**
- * Downward compatible, touchable dial
- *
- * Version: 1.2.0 (15/07/2012)
- * Requires: jQuery v1.7+
- *
- * Copyright (c) 2012 Anthony Terrien
- * Under MIT and GPL licenses:
- *  http://www.opensource.org/licenses/mit-license.php
- *  http://www.gnu.org/licenses/gpl.html
- *
- * Thanks to vor, eskimoblood, spiffistan, FabrizioC
- */
-(function ($) {
 
-    /**
-     * Kontrol library
-     */
+(function ($) {
     "use strict"
 
-    /**
-     * Definition of globals and core
-     */
-    var k = {}, // kontrol
+    var k = {},
         max = Math.max,
         min = Math.min
 
@@ -32,16 +12,6 @@
         return e.originalEvent.touches.length - 1
     }
 
-    /**
-     * Kontrol Object
-     *
-     * Definition of an abstract UI control
-     *
-     * Each concrete component must call this one.
-     * <code>
-     * k.o.call(this);
-     * </code>
-     */
     k.o = function () {
         var s = this
 

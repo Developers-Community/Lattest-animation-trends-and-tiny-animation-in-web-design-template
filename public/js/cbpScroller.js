@@ -1,14 +1,4 @@
-/**
- * cbpScroller.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2013, Codrops
- * http://www.codrops.com
- */
-; (function (window) {
+(function (window) {
 
 	'use strict'
 
@@ -27,8 +17,6 @@
 	function scrollY() {
 		return window.pageYOffset || docElem.scrollTop
 	}
-
-	// http://stackoverflow.com/a/5598797/989439
 	function getOffset(el) {
 		var offsetTop = 0, offsetLeft = 0
 		do {
@@ -52,9 +40,6 @@
 			viewed = scrolled + getViewportH(),
 			elTop = getOffset(el).top,
 			elBottom = elTop + elH,
-			// if 0, the element is considered in the viewport as soon as it enters.
-			// if 1, the element is considered in the viewport only when it's fully inside
-			// value in percentage (1 >= h >= 0)
 			h = h || 0
 
 		return (elTop + elH * h) <= viewed && (elBottom) >= scrolled
@@ -85,7 +70,6 @@
 			this.didScroll = false
 
 			var self = this
-			// the sections already shown...
 			this.sections.forEach(function (el, i) {
 				if (!inViewport(el)) {
 					classie.add(el, 'cbp-so-init')
@@ -120,7 +104,6 @@
 					classie.add(el, 'cbp-so-animate')
 				}
 				else {
-					// this add class init if it doesn't have it. This will ensure that the items initially in the viewport will also animate on scroll
 					classie.add(el, 'cbp-so-init')
 
 					classie.remove(el, 'cbp-so-animate')
@@ -129,8 +112,6 @@
 			this.didScroll = false
 		}
 	}
-
-	// add to global namespace
 	window.cbpScroller = cbpScroller
 
 })(window)

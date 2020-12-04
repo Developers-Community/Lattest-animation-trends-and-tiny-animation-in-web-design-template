@@ -1417,10 +1417,10 @@
   text-align: center;
   width: 630px;
   height: 630px;
-  /* background: #000; */
+  background: #000;
   border-radius: 50%;
   border: 10px double #fff;
-  /* opacity: 0.3; */
+  opacity: 0.4;
   left: 50%;
   margin-left: -325px;
   top: 50%;

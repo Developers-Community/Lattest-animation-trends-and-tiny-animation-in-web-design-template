@@ -35,7 +35,7 @@ const HomeAnimation = () => {
                     <div className="container">
                         <div className="sixteen columns">
                             <div className="cl-effect-18">
-                                <a href="#" data-hover="facebook">facebook</a>
+                                <a target="blank" href="https://www.facebook.com/" data-hover="facebook">facebook</a>
                                 <a href="#" data-hover="Twitter">Twitter</a>
                                 <a href="#" data-hover="Google+">Google+</a>
                             </div>

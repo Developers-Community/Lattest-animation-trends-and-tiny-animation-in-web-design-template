@@ -6,9 +6,9 @@
 		$("#preloader").delay(350).fadeOut("slow");
 	})  
 	
-$(window).load(function() {
-  $("body").removeClass("preload");
-});
+// $(window).load(function() {
+//   $("body").removeClass("preload");
+// });
 	
 	$(document).ready(
 	function() {  
